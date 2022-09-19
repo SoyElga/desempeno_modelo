@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<PetalWidthCm &le; 0.25<br/>gini = 0.663<br/>samples = 90<br/>value = [26, 33, 31]<br/>class = Iris-setosa>, fillcolor="#f8fefb"] ;
+1 [label=<gini = 0.0<br/>samples = 26<br/>value = [26, 0, 0]<br/>class = Iris-virginica>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<PetalLengthCm &le; 0.653<br/>gini = 0.5<br/>samples = 64<br/>value = [0, 33, 31]<br/>class = Iris-setosa>, fillcolor="#f3fdf7"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<SepalLengthCm &le; 0.181<br/>gini = 0.061<br/>samples = 32<br/>value = [0, 31, 1]<br/>class = Iris-setosa>, fillcolor="#3fe685"] ;
+2 -> 3 ;
+4 [label=<PetalLengthCm &le; 0.492<br/>gini = 0.5<br/>samples = 2<br/>value = [0, 1, 1]<br/>class = Iris-setosa>, fillcolor="#ffffff"] ;
+3 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = Iris-setosa>, fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = Iris-versicolor>, fillcolor="#8139e5"] ;
+4 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 30<br/>value = [0, 30, 0]<br/>class = Iris-setosa>, fillcolor="#39e581"] ;
+3 -> 7 ;
+8 [label=<PetalWidthCm &le; 0.667<br/>gini = 0.117<br/>samples = 32<br/>value = [0, 2, 30]<br/>class = Iris-versicolor>, fillcolor="#8946e7"] ;
+2 -> 8 ;
+9 [label=<PetalWidthCm &le; 0.562<br/>gini = 0.5<br/>samples = 4<br/>value = [0, 2, 2]<br/>class = Iris-setosa>, fillcolor="#ffffff"] ;
+8 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = Iris-versicolor>, fillcolor="#8139e5"] ;
+9 -> 10 ;
+11 [label=<SepalWidthCm &le; 0.146<br/>gini = 0.444<br/>samples = 3<br/>value = [0, 2, 1]<br/>class = Iris-setosa>, fillcolor="#9cf2c0"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = Iris-versicolor>, fillcolor="#8139e5"] ;
+11 -> 12 ;
+13 [label=<gini = 0.0<br/>samples = 2<br/>value = [0, 2, 0]<br/>class = Iris-setosa>, fillcolor="#39e581"] ;
+11 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 28<br/>value = [0, 0, 28]<br/>class = Iris-versicolor>, fillcolor="#8139e5"] ;
+8 -> 14 ;
+}
